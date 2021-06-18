@@ -47,7 +47,8 @@ public class WebViewFragment extends Fragment {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(this.getContext().getString(R.string.moodle_url));
         try {
-            webView.setWebViewClient(new MoodleHttpClient(getActivity(),application.externalAssetsRepository));
+            MoodleHttpClient client = new MoodleHttpClient(getActivity(),application.externalAssetsRepository);
+            webView.setWebViewClient(client);
 
         } catch (Exception e) {
             e.printStackTrace();

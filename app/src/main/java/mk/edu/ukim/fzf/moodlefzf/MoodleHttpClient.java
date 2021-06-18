@@ -1,8 +1,12 @@
 package mk.edu.ukim.fzf.moodlefzf;
 
 import android.content.ContextWrapper;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.annotation.Nullable;
 
 
 public class MoodleHttpClient extends WebViewClient {
@@ -21,14 +25,12 @@ public class MoodleHttpClient extends WebViewClient {
         return true;
     }
 
+
     @Override
     public void onPageFinished(WebView webView, String url) {
-        // Several people probably worked hard on the design of this Web page, let's hope they won't see what's next
         injectCSS(webView);
     }
 
-    // Inject CSS method: read style.css from assets folder
-// Append stylesheet to document head
     private void injectCSS(WebView webView) {
         webView.loadUrl("javascript:(function() {" +
                 "var parent = document.getElementsByTagName('head').item(0);" +
