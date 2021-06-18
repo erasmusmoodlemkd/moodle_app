@@ -1,4 +1,4 @@
-package mk.edu.ukim.fzf.moodlefzf;
+package pt.ua.fastaveiro;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import pt.edu.ukim.fzf.moodlefzf.R;
 
 public class MainActivity extends AppCompatActivity {
     private SplashScreenFragment splashScreenFragment;

@@ -1,4 +1,4 @@
-package mk.edu.ukim.fzf.moodlefzf;
+package pt.ua.fastaveiro;
 
 import android.annotation.SuppressLint;
 
@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import pt.edu.ukim.fzf.moodlefzf.R;
 
 import android.app.Activity;
 import android.os.Bundle;

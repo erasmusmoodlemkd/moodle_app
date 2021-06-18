@@ -1,4 +1,4 @@
-package mk.edu.ukim.fzf.moodlefzf;
+package pt.ua.fastaveiro;
 
 public class AssetResponse {
 

@@ -1,12 +1,10 @@
-package mk.edu.ukim.fzf.moodlefzf;
+package pt.ua.fastaveiro;
 
 import android.content.ContextWrapper;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import androidx.annotation.Nullable;
+import pt.edu.ukim.fzf.moodlefzf.R;
 
 
 public class MoodleHttpClient extends WebViewClient {

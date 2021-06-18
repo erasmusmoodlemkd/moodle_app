@@ -1,4 +1,4 @@
-package mk.fzf.moodlefzf;
+package pt.fzf.moodlefzf;
 
 import org.junit.Test;
 
